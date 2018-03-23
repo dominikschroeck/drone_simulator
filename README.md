@@ -1,6 +1,8 @@
-# A UAV simulation engine for logistics applications in future smart cities
+# An Unmanned Aerial Vehicle simulation engine for logistics applications in future smart cities
 
-The  software  simulates  a  3D  environment  representing  a  city  and  UAVs  delivering  items  from base stations  to  its  destinations.  Every  UAV  has  an  assigned  depot, from which it receives items to be delivered. Every base station is responsible for a portion of the whole city area and only contains parcels that are within this area.
+Credits to: Jan Gerald Huenges (jan.g.huenges@campus.tu-berlin.de), Santiago Masip Gimeno (masipgimeno@campus.tu-berlin.de) and  Alexandra Pranskaityte (a.pranskaityte@campus.tu-berlin.de)
+
+The  software  simulates  a  3D  environment  representing  a  city  and  UAVs (Drones)  delivering  items  from base stations  to  its  destinations.  Every  UAV  has  an  assigned  depot, from which it receives items to be delivered. Every base station is responsible for a portion of the whole city area and only contains parcels that are within this area.
 
 After receiving an item, the UAV starts moving to the item’s target destination. On every step it can  move to one of its neighboring cells. It scans the area and stores information on all cells it has visited on its route and exchanges this knowledge with other UAVs it might meet. If  a  cell  on  the  route contains an obstacle, the UAV will deviate from its planed route and try to find a way around the obstacle. Obstacles can have different heights. Similarly, UAVs are able to change their flight altitude and fly over obstacles. After delivering an item, the UAVs fly back to the base station to pick up a new item. Items can have different delivery priorities based on which they are selected for delivery. The limited battery power of a UAV was also taken into consideration in the simulation.  If  the  battery  reaches  a  certain  predefined  threshold, the UAV will target the next nearest base station (not necessarily its home base) and recharge its battery.
 
