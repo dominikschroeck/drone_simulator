@@ -1,0 +1,10 @@
+.idea/workspace.xml
+.idea/misc.xml
+**/.DS_Store
+**/*.pyc
+shape_model/*.*
+*.csv
+*.xlsx
+.idea/*.*
+.idea/group1.iml
+*.iml
